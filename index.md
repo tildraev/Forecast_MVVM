@@ -12,6 +12,7 @@ Students who complete this project independently or as a pairing will showcase t
 * API Documentation
 * MVVM
 * Abstraction
+
 ---
 
 ##  Before you begin
@@ -25,7 +26,10 @@ To do this:
  * Navigate to the correct `directory`
  * Type `git checkout --track origin/starter` 
 	 * Hype
+
+
 ---
+
 ## Goals
 We’ve been tasked with migrating the `design pattern` of this app from `MVC` to `MVVM`. Let’s quickly review how the patterns are structured.
 
@@ -71,6 +75,7 @@ MVVM offered two-way data binding between a `view` and `view-model`. The `view-m
 | Model can be tested directly                         | Code is event-driven which makes it easier to test           |
 
 - - -
+
 ## Model
 
 Our model as provided by the `starter` branch will not need to change. The concept of `Model` is the same with `MVC` and `MVVM`.
@@ -78,6 +83,7 @@ Our model as provided by the `starter` branch will not need to change. The conce
 If you did not start from the `starter` branch, please build your model now via the documentation here [Weatherbit | 16 Day Forecast API Documentation](https://www.weatherbit.io/api/weather-forecast-16-day)
 
 - - -
+
 ## Networking Controller
 
 Our `Networking Controller` as provided by the `starter` branch will not need to change. This functionality is already decoupled from the `Model`
@@ -104,7 +110,10 @@ Because the `View-Model` file is now responsible for handling the `Model` what `
 
 * fetchForcastData
 	* Make the network call
+
+
 - - -
+
 
 With our goals late out let’s get to writing.
 
@@ -139,6 +148,7 @@ With our goals late out let’s get to writing.
 
 
 - - -
+
 ## Update the views
 Using the errors that Xcode is providing complete the app.
 
