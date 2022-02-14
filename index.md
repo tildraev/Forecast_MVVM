@@ -160,4 +160,8 @@ Using the errors that Xcode is providing complete the app.
 
 - - -
 
-Found the bugs and everything is golden? Heck yeah! Submit your project.
+Found the bugs and everything is golden? Heck yeah! Submit your project. Use any extra time to update some of your other projects from `MVC` to `MVVM`
+* Monster Manual
+* Address Book
+* Smart Home
+* Near Eath Objects
