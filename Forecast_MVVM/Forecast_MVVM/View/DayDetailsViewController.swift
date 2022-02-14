@@ -30,7 +30,6 @@ class DayDetailsViewController: UIViewController {
     }
 }
 
-
 //MARK: - Extenstions
 extension DayDetailsViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

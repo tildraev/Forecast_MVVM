@@ -7,7 +7,7 @@
 
 import Foundation
 
-class NetworkingContoller {
+struct NetworkingContoller {
     private static let baseURLString = "https://api.weatherbit.io"
     
     static func fetchDays(completion: @escaping (Result<TopLevelDictionary, ResultError>) -> Void) {

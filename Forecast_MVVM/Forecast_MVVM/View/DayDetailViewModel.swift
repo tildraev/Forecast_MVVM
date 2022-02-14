@@ -14,10 +14,11 @@ protocol DayDetailViewDelegate: DayDetailsViewController {
 class DayDetailViewModel {
     //MARK: - Properties
     var forcastData: TopLevelDictionary?
-    var days: [Day] = []
+    var days: [Day] {
+        self.forcastData?.days ?? []
+    }
     private weak var delegate: DayDetailViewDelegate?
-    private var networkingController: NetworkingContoller
-    
+    private let networkingController: NetworkingContoller
     
     init(delegate: DayDetailViewDelegate, networkController: NetworkingContoller = NetworkingContoller()) {
         self.delegate = delegate
@@ -30,7 +31,6 @@ class DayDetailViewModel {
             switch result {
             case .success(let forcastData):
                 self.forcastData = forcastData
-                self.days = forcastData.days
                 self.delegate?.updateViews()
             case .failure(let error):
                 print("Error fetching the data!", error.errorDescription!)
